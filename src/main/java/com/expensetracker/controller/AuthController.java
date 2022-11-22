@@ -16,14 +16,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.expensetracker.entity.LoginModel;
 import com.expensetracker.entity.User;
 import com.expensetracker.entity.UserModel;
 import com.expensetracker.security.CustomUserDetailsService;
 import com.expensetracker.service.UserService;
 
-
+@CrossOrigin(origins = "*")
 @RestController
 public class AuthController {
 
