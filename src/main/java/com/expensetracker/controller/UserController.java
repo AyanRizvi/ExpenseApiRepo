@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.expensetracker.entity.User;
 import com.expensetracker.entity.UserModel;
 import com.expensetracker.service.UserService;
 
+@CrossOrigin(origins = "*")
 @RestController
 public class UserController {
 
